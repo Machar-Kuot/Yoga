@@ -43,21 +43,11 @@
   </div>
 
   <div class="hero-right">
-    <div class="hero-art">
-      <svg class="lotus-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="200" cy="200" rx="60" ry="130" fill="#7A9E87" opacity="0.35" transform="rotate(0 200 200)"/>
-        <ellipse cx="200" cy="200" rx="60" ry="130" fill="#7A9E87" opacity="0.35" transform="rotate(45 200 200)"/>
-        <ellipse cx="200" cy="200" rx="60" ry="130" fill="#7A9E87" opacity="0.35" transform="rotate(90 200 200)"/>
-        <ellipse cx="200" cy="200" rx="60" ry="130" fill="#7A9E87" opacity="0.35" transform="rotate(135 200 200)"/>
-        <ellipse cx="200" cy="200" rx="42" ry="95" fill="#B4CCBA" opacity="0.55" transform="rotate(22.5 200 200)"/>
-        <ellipse cx="200" cy="200" rx="42" ry="95" fill="#B4CCBA" opacity="0.55" transform="rotate(67.5 200 200)"/>
-        <ellipse cx="200" cy="200" rx="42" ry="95" fill="#B4CCBA" opacity="0.55" transform="rotate(112.5 200 200)"/>
-        <ellipse cx="200" cy="200" rx="42" ry="95" fill="#B4CCBA" opacity="0.55" transform="rotate(157.5 200 200)"/>
-        <circle cx="200" cy="200" r="38" fill="#C47B5A" opacity="0.55"/>
-        <circle cx="200" cy="200" r="22" fill="#F7F3EE" opacity="0.85"/>
-        <text x="200" y="210" text-anchor="middle" font-size="22" font-family="serif" fill="#7A9E87" opacity="0.9">ॐ</text>
-      </svg>
-    </div>
+    <!-- Video background -->
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="Yoga0.mp4" type="video/mp4"/>
+    </video>
+    <div class="hero-video-overlay"></div>
     <div class="hero-badge">
       <div class="badge-stat">
         <strong>12+</strong>
@@ -201,8 +191,7 @@
   <div class="offer-illustrations">
 
     <div class="class-card">
-      <div class="class-card-svg" style="background: linear-gradient(135deg,#e8f0eb,#c8ddd0);">🌅</div>
-      <!-- Replace the div above with: <img src="images/vinyasa.jpg" alt="Morning Vinyasa" class="class-card-img"/> -->
+      <img src="Yoga1.jpg" alt="Morning Vinyasa" class="class-card-img"/>
       <div class="class-card-body">
         <h3>Morning Vinyasa</h3>
         <p>Start your day with an energising sun-salutation flow that links breath to movement, building warmth and focus from the inside out.</p>
@@ -210,8 +199,7 @@
     </div>
 
     <div class="class-card">
-      <div class="class-card-svg" style="background: linear-gradient(135deg,#e8eaf5,#cdd0e8);">🌙</div>
-      <!-- Replace with: <img src="images/yin.jpg" alt="Yin and Restore" class="class-card-img"/> -->
+      <img src="Yoga2.jpg" alt="Yin and Restore" class="class-card-img"/>
       <div class="class-card-body">
         <h3>Yin &amp; Restore</h3>
         <p>Long, supported holds melt tension from the joints and fascia. Perfect for winding down and releasing the weight of the day.</p>
@@ -219,8 +207,7 @@
     </div>
 
     <div class="class-card">
-      <div class="class-card-svg" style="background: linear-gradient(135deg,#f5ebe8,#e8c8c0);">🔥</div>
-      <!-- Replace with: <img src="images/power.jpg" alt="Power Yoga" class="class-card-img"/> -->
+      <img src="Yoga3.jpg" alt="Power Yoga" class="class-card-img"/>
       <div class="class-card-body">
         <h3>Power Yoga</h3>
         <p>A vigorous, heat-building practice for those who want a full-body challenge. Build strength, stamina, and laser-sharp concentration.</p>
@@ -228,8 +215,7 @@
     </div>
 
     <div class="class-card">
-      <div class="class-card-svg" style="background: linear-gradient(135deg,#edf5ec,#c8e0c8);">🌿</div>
-      <!-- Replace with: <img src="images/prenatal.jpg" alt="Prenatal Yoga" class="class-card-img"/> -->
+      <img src="Yoga4.jpg" alt="Prenatal Yoga" class="class-card-img"/>
       <div class="class-card-body">
         <h3>Prenatal Yoga</h3>
         <p>Gentle, trimester-safe sequences that honour your changing body, ease common discomforts, and prepare you for birth.</p>
@@ -237,8 +223,7 @@
     </div>
 
     <div class="class-card">
-      <div class="class-card-svg" style="background: linear-gradient(135deg,#f0ede8,#ddd4c8);">🧘</div>
-      <!-- Replace with: <img src="images/meditation.jpg" alt="Meditation" class="class-card-img"/> -->
+      <img src="Yoga5.jpg" alt="Meditation and Pranayama" class="class-card-img"/>
       <div class="class-card-body">
         <h3>Meditation &amp; Pranayama</h3>
         <p>Learn Nadi Shodhana, Kapalabhati, and guided mindfulness to quiet the mind and strengthen your relationship with breath.</p>
@@ -246,8 +231,7 @@
     </div>
 
     <div class="class-card">
-      <div class="class-card-svg" style="background: linear-gradient(135deg,#eef0f8,#d0d5ee);">👨‍👩‍👧</div>
-      <!-- Replace with: <img src="images/family.jpg" alt="Family Yoga" class="class-card-img"/> -->
+      <img src="Yoga6.jpg" alt="Family Yoga" class="class-card-img"/>
       <div class="class-card-body">
         <h3>Family Yoga</h3>
         <p>Connection through movement — playful partner poses, animal flows, and shared relaxation that kids and parents both love.</p>
@@ -318,75 +302,27 @@
     <div class="photos-grid">
 
       <div class="photo-item">
-        <!-- Replace with: <img src="images/photo1.jpg" alt="Studio space"/> -->
-        <div class="photo-placeholder">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
-            <circle cx="16" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 34 L14 24 L22 32 L30 22 L44 34" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span>Studio Space</span>
-        </div>
+        <img src="Yoga7.jpg" alt="Studio Space"/>
       </div>
 
       <div class="photo-item">
-        <!-- Replace with: <img src="images/photo2.jpg" alt="Group class"/> -->
-        <div class="photo-placeholder">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
-            <circle cx="16" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 34 L14 24 L22 32 L30 22 L44 34" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span>Group Class</span>
-        </div>
+        <img src="Yoga8.jpg" alt="Group Class"/>
       </div>
 
       <div class="photo-item">
-        <!-- Replace with: <img src="images/photo3.jpg" alt="Outdoor session"/> -->
-        <div class="photo-placeholder">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
-            <circle cx="16" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 34 L14 24 L22 32 L30 22 L44 34" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span>Outdoor Session</span>
-        </div>
+        <img src="Yoga9.jpg" alt="Outdoor Session"/>
       </div>
 
       <div class="photo-item">
-        <!-- Replace with: <img src="images/photo4.jpg" alt="Meditation room"/> -->
-        <div class="photo-placeholder">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
-            <circle cx="16" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 34 L14 24 L22 32 L30 22 L44 34" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span>Meditation Room</span>
-        </div>
+        <img src="Yoga7.jpg" alt="Meditation Room"/>
       </div>
 
       <div class="photo-item">
-        <!-- Replace with: <img src="images/photo5.jpg" alt="Retreat event"/> -->
-        <div class="photo-placeholder">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
-            <circle cx="16" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 34 L14 24 L22 32 L30 22 L44 34" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span>Retreat &amp; Events</span>
-        </div>
+        <img src="Yoga8.jpg" alt="Retreat and Events"/>
       </div>
 
       <div class="photo-item">
-        <!-- Replace with: <img src="images/photo6.jpg" alt="Instructor workshop"/> -->
-        <div class="photo-placeholder">
-          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="4" y="4" width="40" height="40" rx="6" stroke="currentColor" stroke-width="2"/>
-            <circle cx="16" cy="18" r="4" stroke="currentColor" stroke-width="2"/>
-            <path d="M4 34 L14 24 L22 32 L30 22 L44 34" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-          </svg>
-          <span>Instructor Workshop</span>
-        </div>
+        <img src="Yoga9.jpg" alt="Instructor Workshop"/>
       </div>
 
     </div>
