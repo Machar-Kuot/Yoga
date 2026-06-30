@@ -672,6 +672,19 @@ section { padding: 6rem 7vw; }
 .form-group select option { color: var(--ink); background: white; }
 .form-group textarea { resize: vertical; min-height: 90px; }
 
+.form-error {
+  font-size: 0.78rem;
+  color: #ffd9c2;
+  min-height: 1rem;
+  display: block;
+}
+
+.form-group input.invalid,
+.form-group select.invalid {
+  border-color: #e2785a;
+  background: rgba(226,120,90,0.12);
+}
+
 .btn-submit {
   width: 100%;
   background: white;
@@ -774,6 +787,91 @@ footer strong {
   letter-spacing: 0.05em;
 }
 
+/* ── WEEKEND REMINDER POP-UP ──────────────────────── */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30,35,32,0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  padding: 1.5rem;
+}
+
+.popup-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-card {
+  background: var(--warm-white);
+  border-radius: 22px;
+  max-width: 420px;
+  width: 100%;
+  padding: 2.6rem 2.2rem 2.2rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 30px 70px rgba(30,35,32,0.3);
+  transform: translateY(20px) scale(0.96);
+  transition: transform 0.32s ease;
+}
+
+.popup-overlay.show .popup-card {
+  transform: translateY(0) scale(1);
+}
+
+.popup-close {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #8a9590;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.popup-close:hover { color: var(--ink); }
+
+.popup-icon {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.popup-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.8rem;
+}
+
+.popup-card p {
+  font-size: 0.92rem;
+  color: #5a6560;
+  line-height: 1.7;
+  margin-bottom: 1.6rem;
+}
+
+.popup-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.popup-actions .btn-primary,
+.popup-actions .btn-outline {
+  width: 100%;
+  text-align: center;
+}
+
 /* ── RESPONSIVE ───────────────────────────────────── */
 @media (max-width: 1024px) {
   .offer-illustrations { grid-template-columns: repeat(2, 1fr); }
@@ -800,4 +898,3 @@ footer strong {
   .offer-illustrations { grid-template-columns: 1fr; }
   .photos-grid { grid-template-columns: 1fr; }
 }
-
