@@ -414,42 +414,60 @@
       </ul>
     </div>
 
-    <div class="reg-form">
+    <form class="reg-form" id="registrationForm" novalidate>
       <div class="form-row">
         <div class="form-group">
           <label for="first">First Name</label>
-          <input type="text" id="first" placeholder="Amara"/>
+          <input type="text" id="first" name="first" placeholder="Amara"/>
+          <span class="form-error" id="first-error"></span>
         </div>
         <div class="form-group">
           <label for="last">Last Name</label>
-          <input type="text" id="last" placeholder="Osei"/>
+          <input type="text" id="last" name="last" placeholder="Osei"/>
+          <span class="form-error" id="last-error"></span>
         </div>
       </div>
 
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="you@email.com"/>
+        <input type="email" id="email" name="email" placeholder="you@email.com"/>
+        <span class="form-error" id="email-error"></span>
       </div>
 
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="+1 000 000 0000"/>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 000 000 0000"/>
+          <span class="form-error" id="phone-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="">Select…</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="nonbinary">Non-binary</option>
+            <option value="prefer-not">Prefer not to say</option>
+          </select>
+          <span class="form-error" id="gender-error"></span>
+        </div>
       </div>
 
       <div class="form-row">
         <div class="form-group">
           <label for="level">Experience Level</label>
-          <select id="level">
+          <select id="level" name="level">
             <option value="">Select…</option>
             <option>Complete Beginner</option>
             <option>Some Experience</option>
             <option>Intermediate</option>
             <option>Advanced</option>
           </select>
+          <span class="form-error" id="level-error"></span>
         </div>
         <div class="form-group">
           <label for="interest">Class Interest</label>
-          <select id="interest">
+          <select id="interest" name="interest">
             <option value="">Select…</option>
             <option>Morning Vinyasa</option>
             <option>Yin &amp; Restore</option>
@@ -458,16 +476,17 @@
             <option>Meditation</option>
             <option>Family Yoga</option>
           </select>
+          <span class="form-error" id="interest-error"></span>
         </div>
       </div>
 
       <div class="form-group">
         <label for="note">Anything we should know?</label>
-        <textarea id="note" placeholder="Injuries, goals, questions — tell us anything…"></textarea>
+        <textarea id="note" name="note" placeholder="Injuries, goals, questions — tell us anything…"></textarea>
       </div>
 
-      <button class="btn-submit" type="button">Reserve My Spot →</button>
-    </div>
+      <button class="btn-submit" type="submit">Reserve My Spot →</button>
+    </form>
   </div>
 </section>
 
@@ -545,6 +564,23 @@
   </p>
   <p style="margin-top:1rem;">© 2026 Praana Yoga Studio. All rights reserved. Made with 🌿</p>
 </footer>
+
+<!-- ════════════════ WEEKEND REMINDER POP-UP ════════════════ -->
+<div class="popup-overlay" id="weekendPopup">
+  <div class="popup-card">
+    <button class="popup-close" id="popupClose" aria-label="Close">×</button>
+    <div class="popup-icon">🌿</div>
+    <h3>Don't Miss the Weekend!</h3>
+    <p>
+      Make time for yourself this weekend — book a Saturday or Sunday class
+      and step into the studio for a moment of calm.
+    </p>
+    <div class="popup-actions">
+      <a href="#registration" class="btn-primary" id="popupBookBtn">Book a Class</a>
+      <button class="btn-outline" id="popupDismiss" type="button">Maybe Later</button>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
